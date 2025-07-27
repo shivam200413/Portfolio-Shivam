@@ -20,124 +20,164 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 
-const colors = ["red" ,"green" , "blue" , "orange","purple" , "brown" , "grey"]
+// STATIC COLOR MAP FOR TAILWIND COMPATIBILITY
+const colorMap = {
+  red: "bg-red-100 text-red-600",
+  green: "bg-green-100 text-green-600",
+  blue: "bg-blue-100 text-blue-600",
+  orange: "bg-orange-100 text-orange-600",
+  purple: "bg-purple-100 text-purple-600",
+  brown: "bg-yellow-900 text-amber-200",  // Tailwind doesn't have "brown" by default
+  grey: "bg-gray-100 text-gray-600"
+}
+const colors = Object.keys(colorMap)
 
-const NAME = "Vaibhav Vishwakarma" ,
-      ROLE = "Data Scientist | ML | Full-Stack Engineer",
-      EMAIL = "vaibhavofficial709@gmail.com",
-      PHONE = "+91 9664250004",
-      LOCATION = "Chennai, TN, India",
-      PROFILE_IMG = "Profile.jpg",
-      ABOUTME = [ "Passionate Machine Leaning Engineer & Full stack developer with 1+ year of experience doing data science and machine learning projects.",
-                "Strong foundation of algoriths, data structure, software engineering princiles, mathematics."] ,
-      coreSkillList = ["data mining", "data storage", "data wrangling", "EDA", "model evalutation", "Computer Vision", "React.js", "RESTful API & Server" ],
-      techStackList = ["Python", "Scikit-Learn", "PyTorch", "React" ,"GCP", "Docker"],
-      UNIVERSITY = "Vellore Institute of Technology, Chennai",
-      DEGREE = "B.Tech Computer Science with specialization in Data Science",
-      PERIOD = "2023-2027",
-      CGPA = "9.12/10.0",
-      PROJECTS = [
-        {
-          "name":"AI Fixed Deposit Advisor & Calculator",
-          "link":"https://vaibhavishwakarma.github.io/fixed_deposit_calc_QA/",
-          "description":"Identify the best bank for Fixed Desposite via Graph. Ask Questions for Pre-Mature Withdrawal Charges, TDS, schemes for special age groups.",
-          "tech_stack":["LLM","NLP", "React", "Supabase" ,"Selenium" , "FastAPI" ], 
-          "key_points":["calculate return amount in 4 taps" , "discuss legal advice with AI" , "hands-free discussion"]
-        },
-        {
-          "name":"Am I Debared❓",
-          "link":"https://vaibhavishwakarma.github.io/AttendanceWebApp/",
-          "description":"Re-Create & formulate your Time Table, months ahead, for vacations and holidays. Specially made with love for Vit students.",
-          "tech_stack":["JavaScript", "FastAPI"], 
-          "key_points":["easy drag-drop courses" , "a red table indicates debared status" , "100+ visits till day"]
-        }
+const NAME = "Shivam Singh Bhati",
+  ROLE = "SDE | Full-Stack (MERN) Developer | AI Enthusiast",
+  EMAIL = "Shivambhati290@gmail.com",
+  PHONE = "+91 8875882353",
+  LOCATION = "Chennai, Tamil Nadu, India",
+  PROFILE_IMG = "/profile.jpg", // Use absolute path from 'public' folder
+  ABOUTME = [
+    "Results-driven Software Developer and AI enthusiast with hands-on experience in end-to-end web development and AI-driven applications.",
+    "Proven track record delivering full-stack projects (MERN) and applying advanced Generative AI techniques under industry mentoring.",
+    "Solid foundation in data structures, algorithms, and modern software engineering practices."
+  ],
+  coreSkillList = [
+    "Full-Stack Web Development (MERN)",
+    "RESTful API Design",
+    "UI/UX Prototyping",
+    "Machine Learning Fundamentals",
+    "Generative AI (Stable Diffusion, ComfyUI)",
+    "Agile & Collaborative Development",
+    "Strategic Problem Solving"
+  ],
+  techStackList = [
+    "JavaScript/TypeScript",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Python",
+    "C++",
+    "Java",
+    "Git & GitHub",
+    "Redux",
+    "Tailwind CSS",
+    "Chart.js",
+    "OpenAI API",
+    "three.js"
+  ],
+  UNIVERSITY = "Vellore Institute of Technology, Chennai",
+  DEGREE = "B.Tech Electronics and Computer Engineering",
+  PERIOD = "2023 – 2027",
+  CGPA = "7.84/10.0",
+  PROJECTS = [
+    {
+      "name": "Yum Finder – Food Delivery Website Clone",
+      "link": "", // Add relevant link if hosted/demoed
+      "description": "Developed a feature-rich food delivery platform clone using the MERN stack. Showcased login, browse, cart, checkout and order tracking flows.",
+      "tech_stack": ["MongoDB", "Express.js", "React", "Node.js"],
+      "key_points": [
+        "Built end-to-end architecture for scalable, responsive web apps",
+        "Implemented secure authentication and data handling",
+        "Industry-mentored code and UI/UX design"
       ]
-      ,
-      CERTIFICATES= [
-        {
-        "link":"https://learn.deeplearning.ai/accomplishments/5a3a4f2c-25d2-48d6-9a1b-21395c36e928",
-        "title":"Multi AI Agent Systems with crewAI",
-        "subtitle":"",
-        "expiry":""
-      },
-      {
-        "link":"https://www.hackerrank.com/certificates/iframe/61d2f65be40c",
-        "title":"Rest API",
-        "subtitle":"",
-        "expiry":""
-      },
-      {
-        "link":"https://www.hackerrank.com/certificates/iframe/12bef5a2bc48",
-        "title":"Python",
-        "subtitle":"",
-        "expiry":""
-      },
-      {
-        "link":"https://www.hackerrank.com/certificates/iframe/31b84083c4e0",
-        "title":"JavaScript",
-        "subtitle":"",
-        "expiry":""
-        }
-        
-    ],
-    MINI_PROJECTS = [
-      {
-        "name":"ML Algoriths from zero",
-        "link":"https://github.com/vaibhaVishwakarma/ML-from-scratch",
-        "description":"Implemented custom class parallel to scikit-learn implemention for comparision, helps in good graps of underlying methemtics.Got answers to -> how predictions are made, how weights are calculated, why gradient is needed, what hyprparamets are impact prediction, basis of model evaulation",
-        "tech_stack":["advance mathematics"],
-        "key_points":["linear-regression & logistic-classifier","decision tree & Random Forest","priciple component analysis (unsupervised)","naive-bayes classifer", "perceptron"],         
-      },
-      {
-        "name":"Computer Vision",
-        "link":"https://github.com/vaibhaVishwakarma/deep_learning",
-        "description":"Implemented custom class to sort images to categories. using Convolutional Neural Network(CNN) technique in PyTorch. Further performed model evaluation for performance metrics.",
-        "tech_stack":["PyTorch"],
-        "key_points":[],         
-      },
-      {
-        "name":"Exploratory Data Analysis",
-        "link":"https://github.com/vaibhaVishwakarma/myML",
-        "description":"",
-        "tech_stack":["pandas","sckikit-Learn"],
-        "key_points":["Data Processing, Transformation, Handling, Visulization, Distribution Trends, Outliers etc."],         
-      },
-      {
-          "name":"YouTube Automation",
-          "link":"",
-          "description":"Interprete the most-viewed section of any YT video, trim and share multiple-reels on your social media handles in less than 10 clicks.",
-          "tech_stack":["Selenium","moviepy","openCV"], 
-          "key_points":["gained 10k+ views on Instagram profile" , "experienced extensive Data Extraction process"]
-      }
-      
-    ],
-    ACHIEVEMENTS = [
-      {
-        "name":"Completed British Airways Data Science Virtual Internship",
-        "link":"https://drive.google.com/drive/folders/1nVfbJAxQaE74ZvcNtHSBEVdl3osCLjJq?usp=sharing",
-        "description":"Processed SkyTrax reviews, presented a executive-summary & designed model with 94% precision for chance of flight booking",
-        "mention":""
-      },
-      {
-        "name":"Best Global Rank of 1307 (Contest 166) & 1400+ Rating",
-        "link":"https://www.codechef.com/users/keen_deed_80",
-        "mention":""
-      },
-      {
-        "name":"100+ DSA Questions over LeetCode & GFG",
-        "link":"https://leetcode.com/u/vaibhavjs709/",
-        "mention":"" 
-      }
-    ],
-    CURRENTLY = ["🚀 Building DeepLeaning Models",
-                    "📚 Learning Advanced Mathematics",
-                    "🎯 Open to new opportunities"],
-    UPDATED_ON = "June 2025"
-
-
-
-
-
+    },
+    {
+      "name": "Image Generation with Stable Diffusion and ComfyUI",
+      "link": "", // Add GitHub link if open-sourced
+      "description": "AI-powered image synthesis using advanced generative models. Automated pipeline for image generation, custom prompts, and performance evaluation.",
+      "tech_stack": ["Python", "Stable Diffusion", "ComfyUI"],
+      "key_points": [
+        "Integrated mentor-guided AI workflows",
+        "Explored model tuning and prompt engineering"
+      ]
+    },
+    {
+      "name": "Chess Engine (JavaScript)",
+      "link": "", // Add actual link if deployed or open-sourced
+      "description": "Developed a JavaScript-based chess engine with full gameplay logic and move validation.",
+      "tech_stack": ["JavaScript", "HTML/CSS"],
+      "key_points": [
+        "Interactive browser-based UI",
+        "Implements core chess algorithms"
+      ]
+    },
+    {
+      "name": "HoneyPhish – Security Awareness Platform",
+      "link": "", // Add demo or repo if available
+      "description": "A gamified phishing simulation and awareness training platform, featuring AI-driven content, real-time scoring, leaderboards, and admin dashboard.",
+      "tech_stack": [
+        "React (TypeScript)",
+        "Tailwind CSS",
+        "three.js",
+        "Redux",
+        "Chart.js",
+        "OpenAI API"
+      ],
+      "key_points": [
+        "Simulates real-world phishing attacks",
+        "Dynamic and interactive user training",
+        "Admin analytics dashboard"
+      ]
+    }
+  ],
+  CERTIFICATES = [
+    {
+      "link": "",
+      "title": "Full Stack Web Development Internship (MERN) – EY GDS & AICTE",
+      "subtitle": "02/2025 – 03/2025",
+      "expiry": ""
+    },
+    {
+      "link": "",
+      "title": "AI Intern – Microsoft & SAP TechSaksham",
+      "subtitle": "01/2025 – 02/2025",
+      "expiry": ""
+    }
+    // Add more if available, e.g., Coursera ML, JS, etc.
+  ],
+  MINI_PROJECTS = [
+    {
+      "name": "UI Prototyping Toolkit",
+      "link": "",
+      "description": "Developed rapid prototyping utilities for creating interactive UI mockups in React.",
+      "tech_stack": ["React", "Figma", "Tailwind CSS"],
+      "key_points": [
+        "Accelerated design-to-development handoff",
+        "Incorporated key UI/UX principles"
+      ]
+    },
+    {
+      "name": "Agile Sprint Dashboard",
+      "link": "",
+      "description": "Built a team productivity dashboard for agile project tracking using Kanban.",
+      "tech_stack": ["React", "Express.js", "MongoDB"],
+      "key_points": [
+        "Tracks sprints, tasks, velocity",
+        "Role-based access for teams"
+      ]
+    }
+  ],
+  ACHIEVEMENTS = [
+    {
+      "name": "Interned at EY GDS & AICTE for Full Stack Web Development",
+      "link": "",
+      "description": "Built production-level MERN app under industry mentorship"
+    },
+    {
+      "name": "Top grades in DSA/Programming courses",
+      "link": "",
+      "description": "Consistently strong performance in algorithm-heavy courses"
+    }
+  ],
+  CURRENTLY = [
+    "🚀 Learning Advanced MERN Stack Concepts",
+    "🧠 Exploring Generative AI in production",
+    "🎓 Networking at developer communities"
+  ],
+  UPDATED_ON = "July 2025"
 
 
 export default function HarvardResume() {
@@ -152,26 +192,22 @@ export default function HarvardResume() {
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
               <div className="flex items-center gap-1">
                 <Mail className="w-4 h-4" />
-                <a href={`tel:${EMAIL}`} target="_blank"><span>{EMAIL}</span></a>
+                <a href={`mailto:${EMAIL}`} target="_blank" rel="noopener noreferrer"><span>{EMAIL}</span></a>
               </div>
               <div className="flex items-center gap-1">
                 <Phone className="w-4 h-4" />
-                <a href={`tel:${PHONE}`} target="_blank"><span>{PHONE}</span></a>
+                <a href={`tel:${PHONE}`} target="_blank" rel="noopener noreferrer"><span>{PHONE}</span></a>
               </div>
               <div className="flex items-center gap-1">
                 <MapPin className="w-4 h-4" />
-                <a href="https://maps.app.goo.gl/1L1c99bn61HNqZPc8" target = "_blank"><span>{LOCATION}</span></a>
+                <a href="https://maps.app.goo.gl/1L1c99bn61HNqZPc8" target="_blank" rel="noopener noreferrer"><span>{LOCATION}</span></a>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      
-
       {/* Main Content */}
-
-
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Column - Introduction */}
@@ -184,13 +220,19 @@ export default function HarvardResume() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden ">
-                  <Image src={PROFILE_IMG}  style = {{objectFit:"cover",transform:"scale(1.1)"}}  alt=""/>
+                <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden relative">
+                  <Image
+                    src={PROFILE_IMG}
+                    width={128}
+                    height={128}
+                    style={{ objectFit: "cover", transform: "scale(1.1)" }}
+                    alt="Profile"
+                  />
                 </div>
 
                 <div className="text-sm text-gray-600 space-y-3">
-                  {ABOUTME.map((statement,idx) => (
-                      <p key={idx} >{statement}</p>
+                  {ABOUTME.map((statement, idx) => (
+                    <p key={idx}>{statement}</p>
                   ))}
                 </div>
 
@@ -212,7 +254,9 @@ export default function HarvardResume() {
                 <div>
                   <h4 className="font-semibold mb-2">Education</h4>
                   <div className="text-sm text-gray-600">
-                    <a href="https://maps.app.goo.gl/7YRCbTgsFHMSkVjF6" target="_blank"><p className="font-medium">{UNIVERSITY}</p></a>
+                    <a href="https://maps.app.goo.gl/7YRCbTgsFHMSkVjF6" target="_blank" rel="noopener noreferrer">
+                      <p className="font-medium">{UNIVERSITY}</p>
+                    </a>
                     <p>{DEGREE}</p>
                     <p className="text-xs text-gray-500">{PERIOD}</p>
                     <p className="text-xs">{CGPA}</p>
@@ -236,7 +280,7 @@ export default function HarvardResume() {
             </Card>
           </div>
 
-          {/* Middle Column - Projects, Achievements & Certifications */}
+          {/* Middle Column - Projects, Mini Projects, Achievements & Certifications */}
           <div className="lg:col-span-6 space-y-8">
             {/* Projects Section */}
             <section>
@@ -244,38 +288,36 @@ export default function HarvardResume() {
                 <Briefcase className="w-6 h-6" />
                 Featured Projects
               </h2>
-
               <div className="space-y-6">
-                {PROJECTS.map((project,idx) => (
-                  <Card key={Number(idx)}>
-                  <CardHeader>
-                    <CardTitle className="flex items-center justify-between">
-                      <span>{project.name}</span>
-                      { project.link?<a href={project.link} target="_blank"><ExternalLink className="w-4 h-4 text-gray-400" /></a>:<></>}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 mb-3">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-1 mb-3">
-                      {project.tech_stack.map((tech) => (
-                        <Badge key={tech} variant="outline" className="text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                    <div className="text-sm text-gray-500">
-                    {project.key_points.map((highlight) =>(
-                      <p key = {highlight}>• {highlight}</p>
-                    ))}
-                    </div>
-                  </CardContent>
-                </Card>
+                {PROJECTS.map((project, idx) => (
+                  <Card key={idx}>
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        <span>{project.name}</span>
+                        {project.link ? <a href={project.link} target="_blank" rel="noopener noreferrer"><ExternalLink className="w-4 h-4 text-gray-400" /></a> : null}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 mb-3">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap gap-1 mb-3">
+                        {project.tech_stack.map((tech) => (
+                          <Badge key={tech} variant="outline" className="text-xs">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        {project.key_points.map((highlight) => (
+                          <p key={highlight}>• {highlight}</p>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </section>
-
 
             {/* Mini Projects */}
             <section>
@@ -283,32 +325,31 @@ export default function HarvardResume() {
                 <Briefcase className="w-6 h-6" />
                 Mini Projects
               </h2>
-
               <div className="space-y-6">
-                {MINI_PROJECTS.map((project,idx) => (
-                  <Card key={Number(idx)}>
-                  <CardHeader>
-                    <CardTitle className="flex items-center justify-between">
-                      <span>{project.name}</span>
-                      { project.link?<a href={project.link} target="_blank"><ExternalLink className="w-4 h-4 text-gray-400" /></a>:<></>}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    {project.description?<p className="text-gray-600 mb-3">{ project.description}</p>:""}
-                    <div className="flex flex-wrap gap-1 mb-3">
-                      {project.tech_stack?project.tech_stack.map((tech) => (
-                        <Badge key={tech} variant="outline" className="text-xs">
-                          {tech}
-                        </Badge>
-                      )):""}
-                    </div>
-                    <div className="text-sm text-gray-500">
-                    {project.key_points?project.key_points.map((highlight,idx) =>(
-                      <p key = {idx}>• {highlight}</p>
-                    )):""}
-                    </div>
-                  </CardContent>
-                </Card>
+                {MINI_PROJECTS.map((project, idx) => (
+                  <Card key={idx}>
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        <span>{project.name}</span>
+                        {project.link ? <a href={project.link} target="_blank" rel="noopener noreferrer"><ExternalLink className="w-4 h-4 text-gray-400" /></a> : null}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      {project.description ? <p className="text-gray-600 mb-3">{project.description}</p> : null}
+                      <div className="flex flex-wrap gap-1 mb-3">
+                        {project.tech_stack?.map((tech) => (
+                          <Badge key={tech} variant="outline" className="text-xs">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        {project.key_points?.map((highlight, idx2) => (
+                          <p key={idx2}>• {highlight}</p>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </section>
@@ -319,29 +360,26 @@ export default function HarvardResume() {
                 <Award className="w-6 h-6" />
                 Achievements & Virtual Internship
               </h2>
-
               <div className="space-y-4">
-                {
-                  ACHIEVEMENTS.map((achievement,idx ) => {
-                    const color = colors[(Math.floor(Math.random()*colors.length))%colors.length];           
-                    return (
-                      <Card key={Number(idx)}>
-                        <CardContent className="pv-3">
-                          <div className="flex items-start gap-3">
-                            <Award className={`w-5 h-5 text-${color}-500 mt-1`} />
-                            <div>
-                              <a href={achievement.link?achievement.link:""} target="_black" ><h3 className="font-semibold">{achievement.name}</h3></a>
-                              {achievement.description?<p className="text-sm text-gray-600"> {achievement.description}</p> :""}
-                              {achievement.mention?<p className="text-xs text-gray-500 mt-1"> {achievement.mention}</p> :""}
-                            </div>
+                {ACHIEVEMENTS.map((achievement, idx) => {
+                  const color = colors[idx % colors.length];
+                  return (
+                    <Card key={idx}>
+                      <CardContent className="py-3">
+                        <div className="flex items-start gap-3">
+                          <Award className={`w-5 h-5 ${colorMap[color]} mt-1`} />
+                          <div>
+                            <a href={achievement.link || "#"} target="_blank" rel="noopener noreferrer">
+                              <h3 className="font-semibold">{achievement.name}</h3>
+                            </a>
+                            {achievement.description && <p className="text-sm text-gray-600">{achievement.description}</p>}
+                            {achievement.mention && <p className="text-xs text-gray-500 mt-1">{achievement.mention}</p>}
                           </div>
-                        </CardContent>
-                      </Card>
-                    )
-                  })
-                }
-
-                
+                        </div>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </section>
 
@@ -351,42 +389,38 @@ export default function HarvardResume() {
                 <BookOpen className="w-6 h-6" />
                 Certifications
               </h2>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                
-                { CERTIFICATES.map((certificate,idx) => {
-                  const color = colors[(Math.floor(Math.random()*colors.length))%colors.length];           
-                  return(
-                  <Card key={Number(idx)}>
-                  <CardHeader>
-                    <CardTitle >
-                      {certificate.link?<a className="flex justify-end" href={certificate.link} target="_blank"><ExternalLink className="w-4 h-4 text-gray-400" ></ExternalLink></a>:""}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="pv-3">
-                    <div className="text-center">
-                      
-                        <div className={`w-12 h-12 bg-${color}-100 rounded-full flex items-center justify-center mx-auto mb-3`}>
-                        <Album className={`w-6 h-6 text-${color}-600`} />
-                      
-                      </div>
-                      <h3 className="font-semibold">{certificate.title}</h3>
-                      { certificate?.subtitle? <p className="text-sm text-gray-600">Professional Level</p> : "" }
-                      { certificate.expiry? <p className="text-xs text-gray-500 mt-1">Expires: Dec 2024</p> : "" }
-                    </div>
-                  </CardContent>
-                </Card>)
-                })
-
-                }
-                
+                {CERTIFICATES.map((certificate, idx) => {
+                  const color = colors[idx % colors.length];
+                  return (
+                    <Card key={idx}>
+                      <CardHeader>
+                        <CardTitle>
+                          {certificate.link ? (
+                            <a className="flex justify-end" href={certificate.link} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="w-4 h-4 text-gray-400" />
+                            </a>
+                          ) : null}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="py-3">
+                        <div className="text-center">
+                          <div className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 ${colorMap[color]}`}>
+                            <Album className="w-6 h-6" />
+                          </div>
+                          <h3 className="font-semibold">{certificate.title}</h3>
+                          {certificate?.subtitle ? <p className="text-sm text-gray-600">{certificate.subtitle}</p> : null}
+                          {certificate.expiry ? <p className="text-xs text-gray-500 mt-1">Expires: {certificate.expiry}</p> : null}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </section>
-
-            
           </div>
 
-          {/* Right Column - Social Links */}
+          {/* Right Column - Social Links and Status */}
           <div className="lg:col-span-3">
             <Card className="sticky top-8">
               <CardHeader>
@@ -396,19 +430,20 @@ export default function HarvardResume() {
                 <div className="space-y-3">
                   <a
                     href="https://www.linkedin.com/in/vaibhavishwakarma/"
-                    target = "_blank"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
                   >
                     <Linkedin className="w-5 h-5 text-blue-600" />
-                    <div >
+                    <div>
                       <p className="font-medium text-sm">LinkedIn</p>
                       <p className="text-xs text-gray-500">Professional Network</p>
                     </div>
                   </a>
-
                   <a
                     href="https://github.com/vaibhaVishwakarma"
-                    target = "_blank"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
                   >
                     <Github className="w-5 h-5 text-gray-800" />
@@ -417,9 +452,10 @@ export default function HarvardResume() {
                       <p className="text-xs text-gray-500">Code Repository</p>
                     </div>
                   </a>
-
                   <a
                     href="https://www.instagram.com/theofficialvaibhav_vishwakarma/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
                   >
                     <Instagram className="w-5 h-5 text-purple-400" />
@@ -428,9 +464,10 @@ export default function HarvardResume() {
                       <p className="text-xs text-gray-500">More Social Side of Mine</p>
                     </div>
                   </a>
-
                   <a
                     href="https://drive.google.com/file/d/1n0T2vE3omuCiAHJaMStajmueLDhHYNy4/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
                   >
                     <Text className="w-5 h-5 text-green-600" />
@@ -439,16 +476,16 @@ export default function HarvardResume() {
                       <p className="text-xs text-gray-500">PDF</p>
                     </div>
                   </a>
-                </div>        
+                </div>
 
                 <Separator />
 
                 <div>
                   <h4 className="font-semibold mb-2">Currently</h4>
-                  {CURRENTLY.map((statement,idx) => (
-                  <p key= {idx} className="text-sm text-gray-600">{statement}<br/></p>
+                  {CURRENTLY.map((statement, idx) => (
+                    <p key={idx} className="text-sm text-gray-600">{statement}<br /></p>
                   ))}
-                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
