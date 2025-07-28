@@ -22,118 +22,152 @@ import Image from "next/image"
 
 const colors = ["red" ,"green" , "blue" , "orange","purple" , "brown" , "grey"]
 
-const NAME = "Vaibhav Vishwakarma" ,
-      ROLE = "Data Scientist | ML | Full-Stack Engineer",
-      EMAIL = "vaibhavofficial709@gmail.com",
-      PHONE = "+91 9664250004",
-      LOCATION = "Chennai, TN, India",
-      PROFILE_IMG = "Profile.jpg",
-      ABOUTME = [ "Passionate Machine Leaning Engineer & Full stack developer with 1+ year of experience doing data science and machine learning projects.",
-                "Strong foundation of algoriths, data structure, software engineering princiles, mathematics."] ,
-      coreSkillList = ["data mining", "data storage", "data wrangling", "EDA", "model evalutation", "Computer Vision", "React.js", "RESTful API & Server" ],
-      techStackList = ["Python", "Scikit-Learn", "PyTorch", "React" ,"GCP", "Docker"],
-      UNIVERSITY = "Vellore Institute of Technology, Chennai",
-      DEGREE = "B.Tech Computer Science with specialization in Data Science",
-      PERIOD = "2023-2027",
-      CGPA = "9.12/10.0",
-      PROJECTS = [
-        {
-          "name":"AI Fixed Deposit Advisor & Calculator",
-          "link":"https://vaibhavishwakarma.github.io/fixed_deposit_calc_QA/",
-          "description":"Identify the best bank for Fixed Desposite via Graph. Ask Questions for Pre-Mature Withdrawal Charges, TDS, schemes for special age groups.",
-          "tech_stack":["LLM","NLP", "React", "Supabase" ,"Selenium" , "FastAPI" ], 
-          "key_points":["calculate return amount in 4 taps" , "discuss legal advice with AI" , "hands-free discussion"]
-        },
-        {
-          "name":"Am I Debared❓",
-          "link":"https://vaibhavishwakarma.github.io/AttendanceWebApp/",
-          "description":"Re-Create & formulate your Time Table, months ahead, for vacations and holidays. Specially made with love for Vit students.",
-          "tech_stack":["JavaScript", "FastAPI"], 
-          "key_points":["easy drag-drop courses" , "a red table indicates debared status" , "100+ visits till day"]
-        }
+const NAME = "Shivam Singh Bhati",
+  ROLE = "SDE | Full-Stack (MERN) Developer | AI Enthusiast",
+  EMAIL = "Shivambhati290@gmail.com",
+  PHONE = "+91 8875882353",
+  LOCATION = "Chennai, Tamil Nadu, India",
+  PROFILE_IMG = "/profile.jpg", // Use absolute path from 'public' folder
+  ABOUTME = [
+    "Results-driven Software Developer and AI enthusiast with hands-on experience in end-to-end web development and AI-driven applications.",
+    "Proven track record delivering full-stack projects (MERN) and applying advanced Generative AI techniques under industry mentoring.",
+    "Solid foundation in data structures, algorithms, and modern software engineering practices."
+  ],
+  coreSkillList = [
+    "Full-Stack Web Development (MERN)",
+    "RESTful API Design",
+    "UI/UX Prototyping",
+    "Machine Learning Fundamentals",
+    "Generative AI (Stable Diffusion, ComfyUI)",
+    "Agile & Collaborative Development",
+    "Strategic Problem Solving"
+  ],
+  techStackList = [
+    "JavaScript/TypeScript",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Python",
+    "C++",
+    "Java",
+    "Git & GitHub",
+    "Redux",
+    "Tailwind CSS",
+    "Chart.js",
+    "OpenAI API",
+    "three.js"
+  ],
+  UNIVERSITY = "Vellore Institute of Technology, Chennai",
+  DEGREE = "B.Tech Electronics and Computer Engineering",
+  PERIOD = "2023 – 2027",
+  CGPA = "7.84/10.0",
+  PROJECTS = [
+    {
+      "name": "Yum Finder – Food Delivery Website Clone",
+      "link": "", // Add relevant link if hosted/demoed
+      "description": "Developed a feature-rich food delivery platform clone using the MERN stack. Showcased login, browse, cart, checkout and order tracking flows.",
+      "tech_stack": ["MongoDB", "Express.js", "React", "Node.js"],
+      "key_points": [
+        "Built end-to-end architecture for scalable, responsive web apps",
+        "Implemented secure authentication and data handling",
+        "Industry-mentored code and UI/UX design"
       ]
-      ,
-      CERTIFICATES= [
-        {
-        "link":"https://learn.deeplearning.ai/accomplishments/5a3a4f2c-25d2-48d6-9a1b-21395c36e928",
-        "title":"Multi AI Agent Systems with crewAI",
-        "subtitle":"",
-        "expiry":""
-      },
-      {
-        "link":"https://www.hackerrank.com/certificates/iframe/61d2f65be40c",
-        "title":"Rest API",
-        "subtitle":"",
-        "expiry":""
-      },
-      {
-        "link":"https://www.hackerrank.com/certificates/iframe/12bef5a2bc48",
-        "title":"Python",
-        "subtitle":"",
-        "expiry":""
-      },
-      {
-        "link":"https://www.hackerrank.com/certificates/iframe/31b84083c4e0",
-        "title":"JavaScript",
-        "subtitle":"",
-        "expiry":""
-        }
-        
-    ],
-    MINI_PROJECTS = [
-      {
-        "name":"ML Algoriths from zero",
-        "link":"https://github.com/vaibhaVishwakarma/ML-from-scratch",
-        "description":"Implemented custom class parallel to scikit-learn implemention for comparision, helps in good graps of underlying methemtics.Got answers to -> how predictions are made, how weights are calculated, why gradient is needed, what hyprparamets are impact prediction, basis of model evaulation",
-        "tech_stack":["advance mathematics"],
-        "key_points":["linear-regression & logistic-classifier","decision tree & Random Forest","priciple component analysis (unsupervised)","naive-bayes classifer", "perceptron"],         
-      },
-      {
-        "name":"Computer Vision",
-        "link":"https://github.com/vaibhaVishwakarma/deep_learning",
-        "description":"Implemented custom class to sort images to categories. using Convolutional Neural Network(CNN) technique in PyTorch. Further performed model evaluation for performance metrics.",
-        "tech_stack":["PyTorch"],
-        "key_points":[],         
-      },
-      {
-        "name":"Exploratory Data Analysis",
-        "link":"https://github.com/vaibhaVishwakarma/myML",
-        "description":"",
-        "tech_stack":["pandas","sckikit-Learn"],
-        "key_points":["Data Processing, Transformation, Handling, Visulization, Distribution Trends, Outliers etc."],         
-      },
-      {
-          "name":"YouTube Automation",
-          "link":"",
-          "description":"Interprete the most-viewed section of any YT video, trim and share multiple-reels on your social media handles in less than 10 clicks.",
-          "tech_stack":["Selenium","moviepy","openCV"], 
-          "key_points":["gained 10k+ views on Instagram profile" , "experienced extensive Data Extraction process"]
-      }
-      
-    ],
-    ACHIEVEMENTS = [
-      {
-        "name":"Completed British Airways Data Science Virtual Internship",
-        "link":"https://drive.google.com/drive/folders/1nVfbJAxQaE74ZvcNtHSBEVdl3osCLjJq?usp=sharing",
-        "description":"Processed SkyTrax reviews, presented a executive-summary & designed model with 94% precision for chance of flight booking",
-        "mention":""
-      },
-      {
-        "name":"Best Global Rank of 1307 (Contest 166) & 1400+ Rating",
-        "link":"https://www.codechef.com/users/keen_deed_80",
-        "mention":""
-      },
-      {
-        "name":"100+ DSA Questions over LeetCode & GFG",
-        "link":"https://leetcode.com/u/vaibhavjs709/",
-        "mention":"" 
-      }
-    ],
-    CURRENTLY = ["🚀 Building DeepLeaning Models",
-                    "📚 Learning Advanced Mathematics",
-                    "🎯 Open to new opportunities"],
-    UPDATED_ON = "June 2025"
-
+    },
+    {
+      "name": "Image Generation with Stable Diffusion and ComfyUI",
+      "link": "", // Add GitHub link if open-sourced
+      "description": "AI-powered image synthesis using advanced generative models. Automated pipeline for image generation, custom prompts, and performance evaluation.",
+      "tech_stack": ["Python", "Stable Diffusion", "ComfyUI"],
+      "key_points": [
+        "Integrated mentor-guided AI workflows",
+        "Explored model tuning and prompt engineering"
+      ]
+    },
+    {
+      "name": "Chess Engine (JavaScript)",
+      "link": "", // Add actual link if deployed or open-sourced
+      "description": "Developed a JavaScript-based chess engine with full gameplay logic and move validation.",
+      "tech_stack": ["JavaScript", "HTML/CSS"],
+      "key_points": [
+        "Interactive browser-based UI",
+        "Implements core chess algorithms"
+      ]
+    },
+    {
+      "name": "HoneyPhish – Security Awareness Platform",
+      "link": "", // Add demo or repo if available
+      "description": "A gamified phishing simulation and awareness training platform, featuring AI-driven content, real-time scoring, leaderboards, and admin dashboard.",
+      "tech_stack": [
+        "React (TypeScript)",
+        "Tailwind CSS",
+        "three.js",
+        "Redux",
+        "Chart.js",
+        "OpenAI API"
+      ],
+      "key_points": [
+        "Simulates real-world phishing attacks",
+        "Dynamic and interactive user training",
+        "Admin analytics dashboard"
+      ]
+    }
+  ],
+  CERTIFICATES = [
+    {
+      "link": "",
+      "title": "Full Stack Web Development Internship (MERN) – EY GDS & AICTE",
+      "subtitle": "02/2025 – 03/2025",
+      "expiry": ""
+    },
+    {
+      "link": "",
+      "title": "AI Intern – Microsoft & SAP TechSaksham",
+      "subtitle": "01/2025 – 02/2025",
+      "expiry": ""
+    }
+    // Add more if available, e.g., Coursera ML, JS, etc.
+  ],
+  MINI_PROJECTS = [
+    {
+      "name": "UI Prototyping Toolkit",
+      "link": "",
+      "description": "Developed rapid prototyping utilities for creating interactive UI mockups in React.",
+      "tech_stack": ["React", "Figma", "Tailwind CSS"],
+      "key_points": [
+        "Accelerated design-to-development handoff",
+        "Incorporated key UI/UX principles"
+      ]
+    },
+    {
+      "name": "Agile Sprint Dashboard",
+      "link": "",
+      "description": "Built a team productivity dashboard for agile project tracking using Kanban.",
+      "tech_stack": ["React", "Express.js", "MongoDB"],
+      "key_points": [
+        "Tracks sprints, tasks, velocity",
+        "Role-based access for teams"
+      ]
+    }
+  ],
+  ACHIEVEMENTS = [
+    {
+      "name": "Interned at EY GDS & AICTE for Full Stack Web Development",
+      "link": "",
+      "description": "Built production-level MERN app under industry mentorship"
+    },
+    {
+      "name": "Top grades in DSA/Programming courses",
+      "link": "",
+      "description": "Consistently strong performance in algorithm-heavy courses"
+    }
+  ],
+  CURRENTLY = [
+    "🚀 Learning Advanced MERN Stack Concepts",
+    "🧠 Exploring Generative AI in production",
+    "🎓 Networking at developer communities"
+  ],
+  UPDATED_ON = "July 2025"
 
 
 
@@ -185,7 +219,7 @@ export default function HarvardResume() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden ">
-                  <Image src={PROFILE_IMG}  style = {{objectFit:"cover",transform:"scale(1.1)"}}  alt=""/>
+                  <Image src={PROFILE_IMG}  width={150} height={150} style = {{objectFit:"cover",transform:"scale(1.1)"}}  alt=""/>
                 </div>
 
                 <div className="text-sm text-gray-600 space-y-3">
