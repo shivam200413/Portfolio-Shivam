@@ -20,17 +20,7 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 
-// STATIC COLOR MAP FOR TAILWIND COMPATIBILITY
-const colorMap = {
-  red: "bg-red-100 text-red-600",
-  green: "bg-green-100 text-green-600",
-  blue: "bg-blue-100 text-blue-600",
-  orange: "bg-orange-100 text-orange-600",
-  purple: "bg-purple-100 text-purple-600",
-  brown: "bg-yellow-900 text-amber-200",  // Tailwind doesn't have "brown" by default
-  grey: "bg-gray-100 text-gray-600"
-}
-const colors = Object.keys(colorMap)
+const colors = ["red" ,"green" , "blue" , "orange","purple" , "brown" , "grey"]
 
 const NAME = "Shivam Singh Bhati",
   ROLE = "SDE | Full-Stack (MERN) Developer | AI Enthusiast",
@@ -164,12 +154,14 @@ const NAME = "Shivam Singh Bhati",
     {
       "name": "Interned at EY GDS & AICTE for Full Stack Web Development",
       "link": "",
-      "description": "Built production-level MERN app under industry mentorship"
+      "description": "Built production-level MERN app under industry mentorship",
+      mention:""
     },
     {
       "name": "Top grades in DSA/Programming courses",
       "link": "",
-      "description": "Consistently strong performance in algorithm-heavy courses"
+      "description": "Consistently strong performance in algorithm-heavy courses",
+      mention:""
     }
   ],
   CURRENTLY = [
@@ -178,6 +170,10 @@ const NAME = "Shivam Singh Bhati",
     "🎓 Networking at developer communities"
   ],
   UPDATED_ON = "July 2025"
+
+
+
+
 
 
 export default function HarvardResume() {
@@ -220,14 +216,8 @@ export default function HarvardResume() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden relative">
-                  <Image
-                    src={PROFILE_IMG}
-                    width={128}
-                    height={128}
-                    style={{ objectFit: "cover", transform: "scale(1.1)" }}
-                    alt="Profile"
-                  />
+                <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden ">
+                  <Image src={PROFILE_IMG}  width={150} height={150} style = {{objectFit:"cover",transform:"scale(1.1)"}}  alt=""/>
                 </div>
 
                 <div className="text-sm text-gray-600 space-y-3">

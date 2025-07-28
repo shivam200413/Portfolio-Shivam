@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vaibhav Vishwakarma Portfolio",
+  title: "Shivam Singh Bhati Portfolio",
   description: "Describes my journey in tech and elobrates and presents my project. a place to connect to me",
   icons: {
     icon: 'Profile.jpg',
