@@ -419,7 +419,7 @@ export default function HarvardResume() {
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <a
-                    href="https://www.linkedin.com/in/vaibhavishwakarma/"
+                    href="https://www.linkedin.com/in/shivamsinghbhati13"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
@@ -431,7 +431,7 @@ export default function HarvardResume() {
                     </div>
                   </a>
                   <a
-                    href="https://github.com/vaibhaVishwakarma"
+                    href="https://github.com/shivam200413"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
@@ -443,7 +443,7 @@ export default function HarvardResume() {
                     </div>
                   </a>
                   <a
-                    href="https://www.instagram.com/theofficialvaibhav_vishwakarma/"
+                    href="https://www.instagram.com/heycvam/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
@@ -455,7 +455,7 @@ export default function HarvardResume() {
                     </div>
                   </a>
                   <a
-                    href="https://drive.google.com/file/d/1n0T2vE3omuCiAHJaMStajmueLDhHYNy4/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1ftD6VrDg3Oo3ueYrZYmQ4aZAxjygfx7R/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg border hover:bg-gray-50 transition-colors"
