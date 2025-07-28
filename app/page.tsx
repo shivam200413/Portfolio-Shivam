@@ -154,12 +154,14 @@ const NAME = "Shivam Singh Bhati",
     {
       "name": "Interned at EY GDS & AICTE for Full Stack Web Development",
       "link": "",
-      "description": "Built production-level MERN app under industry mentorship"
+      "description": "Built production-level MERN app under industry mentorship",
+      mention:""
     },
     {
       "name": "Top grades in DSA/Programming courses",
       "link": "",
-      "description": "Consistently strong performance in algorithm-heavy courses"
+      "description": "Consistently strong performance in algorithm-heavy courses",
+      mention:""
     }
   ],
   CURRENTLY = [
