@@ -27,7 +27,7 @@ const NAME = "Shivam Singh Bhati",
   EMAIL = "Shivambhati290@gmail.com",
   PHONE = "+91 8875882353",
   LOCATION = "Chennai, Tamil Nadu, India",
-  PROFILE_IMG = "/profile.jpg", // Use absolute path from 'public' folder
+  PROFILE_IMG = "https://raw.githubusercontent.com/shivam200413/Portfolio-Shivam/31e6c29bc86d9688dea92c7c6237eba8739a8ab2/public/Profile.jpg", // Use absolute path from 'public' folder
   ABOUTME = [
     "Results-driven Software Developer and AI enthusiast with hands-on experience in end-to-end web development and AI-driven applications.",
     "Proven track record delivering full-stack projects (MERN) and applying advanced Generative AI techniques under industry mentoring.",
