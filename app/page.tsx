@@ -357,7 +357,7 @@ export default function HarvardResume() {
                     <Card key={idx}>
                       <CardContent className="py-3">
                         <div className="flex items-start gap-3">
-                          <Award className={`w-5 h-5 ${colorMap[color]} mt-1`} />
+                          <Award className={`w-5 h-5 ${color} mt-1`} />
                           <div>
                             <a href={achievement.link || "#"} target="_blank" rel="noopener noreferrer">
                               <h3 className="font-semibold">{achievement.name}</h3>
@@ -395,7 +395,7 @@ export default function HarvardResume() {
                       </CardHeader>
                       <CardContent className="py-3">
                         <div className="text-center">
-                          <div className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 ${colorMap[color]}`}>
+                          <div className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 ${color}`}>
                             <Album className="w-6 h-6" />
                           </div>
                           <h3 className="font-semibold">{certificate.title}</h3>
