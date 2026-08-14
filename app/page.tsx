@@ -89,7 +89,7 @@ export default function Portfolio() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff6b6b] to-[#ff8e53]">Deploy.</span>
               </h1>
               <p className="text-xl text-[#444] dark:text-[#bbb] max-w-2xl leading-relaxed font-medium mt-6">
-                Hi, I'm <strong className="text-[#111] dark:text-white font-bold">Shivam Singh Bhati</strong>. I engineer scalable full-stack architectures and build intelligent, AI-driven web applications.
+                Hi, I&apos;m <strong className="text-[#111] dark:text-white font-bold">Shivam Singh Bhati</strong>. I engineer scalable full-stack architectures and build intelligent, AI-driven web applications.
               </p>
 
               <div className="flex flex-wrap items-center gap-6 pt-6">
@@ -431,21 +431,21 @@ export default function Portfolio() {
             <div className="p-6 md:p-10 font-mono text-sm md:text-base overflow-x-auto leading-loose text-[#333] dark:text-[#d4d4d4]">
               <div><span className="text-[#e23636] dark:text-[#c586c0] font-bold">class</span> <span className="text-[#d88c00] dark:text-[#4ec9b0] font-bold">ShivamBhati</span> {'{'}</div>
               
-              <div className="pl-8 text-[#888] dark:text-[#6a9955] italic mb-2">// Currently pursuing B.Tech in Electronics and Computer Engineering at VIT Chennai</div>
-              <div className="pl-8 text-[#888] dark:text-[#6a9955] italic mb-4">// Oracle Certified in Java Foundations | CGPA: 8.02/10</div>
+              <div className="pl-8 text-[#888] dark:text-[#6a9955] italic mb-2">{/* Currently pursuing B.Tech in Electronics and Computer Engineering at VIT Chennai */}</div>
+              <div className="pl-8 text-[#888] dark:text-[#6a9955] italic mb-4">{/* Oracle Certified in Java Foundations | CGPA: 8.02/10 */}</div>
 
               <div className="pl-8"><span className="text-[#005cc5] dark:text-[#569cd6] font-bold">constructor</span>() {'{'}</div>
-              <div className="pl-16"><span className="text-[#005cc5] dark:text-[#569cd6]">this</span>.<span className="text-[#d88c00] dark:text-[#9cdcfe]">name</span> <span className="text-[#e23636] dark:text-[#d4d4d4]">=</span> <span className="text-[#032f62] dark:text-[#ce9178]">'Shivam Singh Bhati'</span>;</div>
-              <div className="pl-16"><span className="text-[#005cc5] dark:text-[#569cd6]">this</span>.<span className="text-[#d88c00] dark:text-[#9cdcfe]">email</span> <span className="text-[#e23636] dark:text-[#d4d4d4]">=</span> <span className="text-[#032f62] dark:text-[#ce9178]">'shivambhati290@gmail.com'</span>;</div>
-              <div className="pl-16"><span className="text-[#005cc5] dark:text-[#569cd6]">this</span>.<span className="text-[#d88c00] dark:text-[#9cdcfe]">problemSolving</span> <span className="text-[#e23636] dark:text-[#d4d4d4]">=</span> <span className="text-[#032f62] dark:text-[#ce9178]">'250+ LeetCode & CodeChef'</span>;</div>
+              <div className="pl-16"><span className="text-[#005cc5] dark:text-[#569cd6]">this</span>.<span className="text-[#d88c00] dark:text-[#9cdcfe]">name</span> <span className="text-[#e23636] dark:text-[#d4d4d4]">=</span> <span className="text-[#032f62] dark:text-[#ce9178]">&apos;Shivam Singh Bhati&apos;</span>;</div>
+              <div className="pl-16"><span className="text-[#005cc5] dark:text-[#569cd6]">this</span>.<span className="text-[#d88c00] dark:text-[#9cdcfe]">email</span> <span className="text-[#e23636] dark:text-[#d4d4d4]">=</span> <span className="text-[#032f62] dark:text-[#ce9178]">&apos;shivambhati290@gmail.com&apos;</span>;</div>
+              <div className="pl-16"><span className="text-[#005cc5] dark:text-[#569cd6]">this</span>.<span className="text-[#d88c00] dark:text-[#9cdcfe]">problemSolving</span> <span className="text-[#e23636] dark:text-[#d4d4d4]">=</span> <span className="text-[#032f62] dark:text-[#ce9178]">&apos;250+ LeetCode &amp; CodeChef&apos;</span>;</div>
               <div className="pl-8">{'}'}</div>
 
               <div className="pl-8 mt-4"><span className="text-[#005cc5] dark:text-[#dcdcaa] font-bold">getSkills</span>() {'{'}</div>
               <div className="pl-16"><span className="text-[#e23636] dark:text-[#c586c0] font-bold">return</span> [</div>
-              <div className="pl-24"><span className="text-[#032f62] dark:text-[#ce9178]">'C', 'C++', 'Java', 'JavaScript', 'SQL'</span>,</div>
-              <div className="pl-24"><span className="text-[#032f62] dark:text-[#ce9178]">'React', 'Next.js', 'Node.js', 'Express', 'REST APIs'</span>,</div>
-              <div className="pl-24"><span className="text-[#032f62] dark:text-[#ce9178]">'MongoDB', 'MySQL', 'Supabase', 'PostGIS'</span>,</div>
-              <div className="pl-24"><span className="text-[#032f62] dark:text-[#ce9178]">'AWS', 'Docker', 'Git', 'Linux'</span></div>
+              <div className="pl-24"><span className="text-[#032f62] dark:text-[#ce9178]">&apos;C&apos;, &apos;C++&apos;, &apos;Java&apos;, &apos;JavaScript&apos;, &apos;SQL&apos;</span>,</div>
+              <div className="pl-24"><span className="text-[#032f62] dark:text-[#ce9178]">&apos;React&apos;, &apos;Next.js&apos;, &apos;Node.js&apos;, &apos;Express&apos;, &apos;REST APIs&apos;</span>,</div>
+              <div className="pl-24"><span className="text-[#032f62] dark:text-[#ce9178]">&apos;MongoDB&apos;, &apos;MySQL&apos;, &apos;Supabase&apos;, &apos;PostGIS&apos;</span>,</div>
+              <div className="pl-24"><span className="text-[#032f62] dark:text-[#ce9178]">&apos;AWS&apos;, &apos;Docker&apos;, &apos;Git&apos;, &apos;Linux&apos;</span></div>
               <div className="pl-16">];</div>
               <div className="pl-8">{'}'}</div>
               
@@ -462,7 +462,7 @@ export default function Portfolio() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-16 mb-24 border-b border-[#333] pb-24">
             <div className="space-y-8 max-w-2xl">
               <h2 className="text-5xl md:text-7xl font-black tracking-tight leading-tight text-white">
-                Let's build <br /> <span className="text-[#ff6b6b]">the future.</span>
+                Let&apos;s build <br /> <span className="text-[#ff6b6b]">the future.</span>
               </h2>
               <a 
                 href="mailto:shivambhati290@gmail.com"
