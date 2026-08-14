@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,10 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shivam Singh Bhati Portfolio",
-  description: "Describes my journey in tech and elobrates and presents my project. a place to connect to me",
+  title: "Shivam Singh Bhati | Software Engineer",
+  description: "Portfolio of Shivam Singh Bhati, a Software Engineer specializing in full-stack web development and AI-driven applications.",
   icons: {
-    icon: 'Profile.jpg',
+    icon: '/my_pic.png',
   },
 };
 
@@ -26,11 +27,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

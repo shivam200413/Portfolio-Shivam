@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shivam Singh Bhati | Software Engineer Portfolio
 
-## Getting Started
+Welcome to the source code for my personal portfolio website. This is a highly optimized, fully responsive, and elegant full-stack developer portfolio built to showcase my technical projects, professional experience, and skills.
 
-First, run the development server:
+## 🚀 Live Demo
+[View Live Portfolio](https://github.com/shivam200413) *(Replace with your actual GitHub pages URL once deployed, e.g., https://shivam200413.github.io/your-repo-name)*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Technology Stack
+This portfolio is built with modern web standards in mind:
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Library:** [React 19](https://react.dev/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Theme:** Custom native React Context for flawless Dark/Light mode switching (no external dependencies).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
+- **Editorial Layout:** A bespoke, asymmetrical grid layout designed for high-resolution displays.
+- **True Dark Mode:** A seamlessly integrated, flash-free dark/light theme toggle.
+- **Responsive Design:** Completely fluid and mobile-first, ensuring an excellent experience on all devices.
+- **Developer-Centric Motif:** Interactive timeline nodes and a syntax-highlighted code block for the "About" section.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Local Development Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To run this project on your local machine, follow these steps:
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/shivam200413/your-repo-name.git
+   cd your-repo-name
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **View the application:**
+   Open [http://localhost:3000](http://localhost:3000) in your web browser.
 
-## Deploy on Vercel
+## 📝 How to Update Content (Customization Guide)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The codebase has been heavily commented to make future updates extremely easy. All primary content is located in a single file: `app/page.tsx`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Social Links:** Search for `SOCIAL_LINKS` at the top of the file to update your LinkedIn, GitHub, LeetCode, etc.
+2. **Projects:** Search for `PROJECT_LINKS` to update repository URLs. Scroll down to the `<section id="work">` block to change project titles, descriptions, and technology tags.
+3. **Experience:** Search for `<!-- EXPERIENCE SECTION -->` to modify your work history.
+4. **Skills & Certifications:** Search for `<!-- SKILLS SECTION -->` to add or remove specific technical tools.
+5. **Resume:** Replace the `public/resume.pdf` file with your latest resume.
+6. **Profile Picture:** Replace `public/my_pic.png` with your desired headshot.
+
+## 📄 License
+This project is open-source and available under the [MIT License](LICENSE).
