@@ -2,6 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import BuddyUpImg from "../public/buddyup.png";
+import CloudLabImg from "../public/cloudlab.png";
+import HoneyPhishImg from "../public/honeyphish.png";
+import MyPicImg from "../public/my_pic.png";
 import { ArrowUpRight, Github, Linkedin, Code2, Download, ExternalLink, ChevronRight, Terminal, Moon, Sun, Award } from "lucide-react";
 import { useTheme } from "./theme-provider";
 
@@ -115,7 +119,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0 bg-[#ff6b6b] rounded-2xl transform translate-x-4 translate-y-4 transition-transform group-hover:translate-x-6 group-hover:translate-y-6 duration-500"></div>
                 <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-[#111] dark:border-[#333] bg-white dark:bg-[#111] z-10 transition-transform group-hover:-translate-y-2 group-hover:-translate-x-2 duration-500">
                   <Image 
-                    src="/my_pic.png" 
+                    src={MyPicImg}
                     alt="Shivam Singh Bhati" 
                     fill
                     className="object-cover"
@@ -153,7 +157,7 @@ export default function Portfolio() {
               </div>
               <div className="relative z-10 grid lg:grid-cols-12 gap-12 items-center">
                 <div className="lg:col-span-7 rounded-2xl overflow-hidden shadow-2xl border border-[#eaeaea] dark:border-[#333] bg-white dark:bg-[#111] aspect-[16/10] flex items-center justify-center relative group-hover:shadow-[#ff6b6b]/20 transition-all duration-500">
-                  <Image src="/buddyup.png" alt="BuddyUp Architecture" fill className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                  <Image src={BuddyUpImg} alt="BuddyUp Architecture" fill className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <div className="lg:col-span-5 space-y-6 lg:pl-8">
@@ -184,7 +188,7 @@ export default function Portfolio() {
               </div>
               <div className="relative z-10 grid lg:grid-cols-12 gap-12 items-center">
                 <div className="lg:col-span-7 lg:order-2 rounded-2xl overflow-hidden shadow-2xl border border-[#eaeaea] dark:border-[#333] bg-white dark:bg-[#111] aspect-[16/10] flex items-center justify-center relative group-hover:shadow-[#ff6b6b]/20 transition-all duration-500">
-                  <Image src="/cloudlab.png" alt="CloudLab Architecture" fill className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                  <Image src={CloudLabImg} alt="CloudLab Architecture" fill className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <div className="lg:col-span-5 lg:order-1 space-y-6 lg:pr-8">
@@ -215,7 +219,7 @@ export default function Portfolio() {
               </div>
               <div className="relative z-10 grid lg:grid-cols-12 gap-12 items-center">
                 <div className="lg:col-span-7 rounded-2xl overflow-hidden shadow-2xl border border-[#eaeaea] dark:border-[#333] bg-white dark:bg-[#111] aspect-[16/10] flex items-center justify-center relative group-hover:shadow-[#ff6b6b]/20 transition-all duration-500">
-                  <Image src="/honeyphish.png" alt="HoneyPhish Simulation" fill className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                  <Image src={HoneyPhishImg} alt="HoneyPhish Simulation" fill className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
                 <div className="lg:col-span-5 space-y-6 lg:pl-8">
