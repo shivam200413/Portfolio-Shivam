@@ -44,11 +44,11 @@ export default function Portfolio() {
           </span>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-bold text-[#444] dark:text-[#aaa]">
-            <a href="#start" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Start /></a>
-            <a href="#work" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Work /></a>
-            <a href="#experience" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Experience /></a>
-            <a href="#skills" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Skills /></a>
-            <a href="#about" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Class /></a>
+            <a href="#start" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Start /{">"}</a>
+            <a href="#work" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Work /{">"}</a>
+            <a href="#experience" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Experience /{">"}</a>
+            <a href="#skills" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Skills /{">"}</a>
+            <a href="#about" className="hover:text-[#ff6b6b] dark:hover:text-[#ff6b6b] transition-colors">Class /{">"}</a>
           </div>
           
           <div className="flex items-center gap-4">
@@ -81,7 +81,7 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center w-full">
             <div className="lg:col-span-7 space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
               <div className="inline-block text-[#ff6b6b] font-mono font-bold tracking-widest uppercase text-sm mb-2">
-                Init />
+                Init /{">"}
               </div>
               <h1 className="text-6xl lg:text-[5.5rem] font-black tracking-tighter text-[#111] dark:text-[#fff] leading-[1.05]">
                 Design.<br />
@@ -134,7 +134,7 @@ export default function Portfolio() {
 
           <div className="mb-24">
             <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-[#111] dark:text-white flex items-center gap-4">
-              Work <span className="text-[#ff6b6b] font-mono text-2xl font-bold">/></span>
+              Work <span className="text-[#ff6b6b] font-mono text-2xl font-bold">/{">"}</span>
             </h2>
             <p className="text-[#444] dark:text-[#aaa] mt-4 text-xl font-medium">Selected full-stack and AI-driven projects.</p>
           </div>
@@ -249,7 +249,7 @@ export default function Portfolio() {
           <div className="hidden lg:flex absolute left-[-0.45rem] top-32 w-4 h-4 rounded-full bg-[#faf9f6] dark:bg-[#0a0a0a] border-4 border-[#ff6b6b] z-10 transition-colors duration-300"></div>
 
           <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-[#111] dark:text-white flex items-center gap-4 mb-20">
-            Experience <span className="text-[#ff6b6b] font-mono text-2xl font-bold">/></span>
+            Experience <span className="text-[#ff6b6b] font-mono text-2xl font-bold">/{">"}</span>
           </h2>
           
           <div className="space-y-12">
@@ -317,7 +317,7 @@ export default function Portfolio() {
           <div className="hidden lg:flex absolute left-[-0.45rem] top-32 w-4 h-4 rounded-full bg-[#faf9f6] dark:bg-[#0a0a0a] border-4 border-[#ff6b6b] z-10 transition-colors duration-300"></div>
 
           <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-[#111] dark:text-white flex items-center gap-4 mb-16">
-            Skills <span className="text-[#ff6b6b] font-mono text-2xl font-bold">/></span>
+            Skills <span className="text-[#ff6b6b] font-mono text-2xl font-bold">/{">"}</span>
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-16">
@@ -417,7 +417,7 @@ export default function Portfolio() {
           <div className="hidden lg:flex absolute left-[-0.45rem] top-32 w-4 h-4 rounded-full bg-[#faf9f6] dark:bg-[#0a0a0a] border-4 border-[#ff6b6b] z-10 transition-colors duration-300"></div>
 
           <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-[#111] dark:text-white flex items-center gap-4 mb-16">
-            Class <span className="text-[#ff6b6b] font-mono text-2xl font-bold">/></span>
+            Class <span className="text-[#ff6b6b] font-mono text-2xl font-bold">/{">"}</span>
           </h2>
           
           <div className="bg-[#ffffff] dark:bg-[#1e1e1e] border border-[#eaeaea] dark:border-[#333] rounded-2xl shadow-xl overflow-hidden transition-colors duration-300">
