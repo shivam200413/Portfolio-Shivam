@@ -3,7 +3,7 @@
 Welcome to the source code for my personal portfolio website. This is a highly optimized, fully responsive, and elegant full-stack developer portfolio built to showcase my technical projects, professional experience, and skills.
 
 ## 🚀 Live Demo
-[View Live Portfolio](https://github.com/shivam200413) *(Replace with your actual GitHub pages URL once deployed, e.g., https://shivam200413.github.io/your-repo-name)*
+https://shivam200413.github.io/Portfolio-Shivam/
 
 ## 🛠️ Technology Stack
 This portfolio is built with modern web standards in mind:
